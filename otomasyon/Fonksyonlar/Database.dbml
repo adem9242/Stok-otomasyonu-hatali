@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="otomasyon" Class="DatabaseDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-V35AOV1\YENI;Initial Catalog=otomasyon;Integrated Security=True" SettingsObjectName="otomasyon.Properties.Settings" SettingsPropertyName="otomasyonConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.[TBL_STOK GRUPLARI]" Member="TBL_STOK_GRUPLARIs">
+    <Type Name="TBL_STOK_GRUPLARI">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="GRUPADİ" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="GRUPKODU" Type="System.String" DbType="NChar(30)" CanBeNull="true" />
+      <Column Name="GRUPSAVEUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRUPSAVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="GRUPEDİTUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="GRUPEDİTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.TBL_STOKLAR" Member="TBL_STOKLARs">
+    <Type Name="TBL_STOKLAR">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsPrimaryKey="true" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="BARKOD" Type="System.String" DbType="NVarChar(30)" CanBeNull="true" />
+      <Column Name="STOKKODU" Type="System.String" DbType="NChar(20)" CanBeNull="true" />
+      <Column Name="STOKADİ" Type="System.String" DbType="NChar(50)" CanBeNull="true" />
+      <Column Name="STOKBİRİM" Type="System.String" DbType="NChar(15)" CanBeNull="true" />
+      <Column Name="STOKALİSFİYAT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKSATİSFİYAT" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKALİSKDV" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKSATİSKDV" Type="System.Decimal" DbType="Decimal(8,2)" CanBeNull="true" />
+      <Column Name="STOKGRUPID" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKRESİM" Type="System.Data.Linq.Binary" DbType="Image" CanBeNull="true" UpdateCheck="Never" />
+      <Column Name="STOKSAVEUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKSAVEDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="STOKEDİTUSER" Type="System.Int32" DbType="Int" CanBeNull="true" />
+      <Column Name="STOKEDİTDATE" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>
